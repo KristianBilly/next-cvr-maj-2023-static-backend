@@ -1,45 +1,4 @@
-import { LANDING_PAGE_PATH, SEARCH_PATH, VIRKOPEDIA_PATH } from './constants'
-
 export const contentData = {
-  headerData: {
-    titleLinks: [
-      {
-        text: 'Landing Page',
-        link: LANDING_PAGE_PATH,
-      },
-      {
-        text: 'Search CVR',
-        link: SEARCH_PATH,
-      },
-      {
-        text: 'Help - Virkopedia',
-        link: VIRKOPEDIA_PATH,
-      },
-    ],
-  },
-  footerData: {
-    firstColumn: [
-      'Topics',
-      'Find selfservice or more',
-      'Authorities',
-      'Find Selfservice',
-    ],
-    secondColumn: [
-      'Contact CVR',
-      'Cookies',
-      'Find Selfservice',
-      'Personal Data',
-      'Declaration of access',
-    ],
-    thirdColumn: [
-      'Virk',
-      'New rules',
-      'Privacy',
-      'Security Check',
-      'Cvr.dk Assistent',
-    ],
-  },
-
   virkopediaData: [
     {
       title: 'Acquisition',

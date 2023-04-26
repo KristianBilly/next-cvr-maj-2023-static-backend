@@ -1,15 +1,12 @@
 import Link from 'next/link'
+import { headerData } from './header-data'
 
-export const Header = ({ contentData }) => {
-  const {
-    headerData: { titleLinks },
-  } = contentData
-
+export const Header = () => {
   return (
     <div className="header">
       <h1 className="header-title">CVR - Business in Denmark</h1>
       <div className="header-container">
-        {titleLinks.map(({ text, link }, index) => (
+        {headerData.map(({ text, link }, index) => (
           <Link
             className="header-linLink"
             href={link}

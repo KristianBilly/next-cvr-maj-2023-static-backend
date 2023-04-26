@@ -1,16 +1,17 @@
 import { LANDING_PAGE_PATH } from '../../../constants/constants'
 import { TextLink } from '../../other/text-link'
+import { footerData } from './footer-data'
 import { FooterSection } from './footer-section'
 
-export const Footer = ({ contentData }) => {
+export const Footer = () => {
   const FooterSections = [
-    { columnLinks: contentData.footerData.firstColumn, className: 'odd-link' },
+    { columnLinks: footerData.firstColumn, className: 'odd-link' },
     {
-      columnLinks: contentData.footerData.secondColumn,
+      columnLinks: footerData.secondColumn,
       className: 'first-link',
     },
     {
-      columnLinks: contentData.footerData.thirdColumn,
+      columnLinks: footerData.thirdColumn,
       className: 'first-link',
     },
   ]

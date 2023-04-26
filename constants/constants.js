@@ -6,4 +6,6 @@ export const DARK_THEME = 'dark-theme'
 export const LANDING_PAGE_PATH = '/'
 export const VIRKOPEDIA_PATH = '/virkopedia'
 export const SEARCH_PATH = '/search'
-export const COMPANY_PATH = '/company/:routeParams'
+
+//API
+export const API_ENDPOINT = 'http://localhost:3000/api/'

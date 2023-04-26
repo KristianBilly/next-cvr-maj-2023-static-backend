@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { contentData } from '../../constants/content-data'
 import { VirkopediaArticle } from '../../components/virkopedia/virkopedia-article'
 import { VirkopediaTab } from '../../components/virkopedia/virkopedia-tab'
+import { API_ENDPOINT } from '../../constants/constants'
 
-const allArticles = contentData.virkopediaData
+const Virkopedia = ({ contentData }) => {
+  const allArticles = contentData.virkopediaData
 
-const Virkopedia = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0)
   const { content, title } = allArticles[activeButtonIndex]
 
@@ -31,6 +31,17 @@ const Virkopedia = () => {
       </div>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(API_ENDPOINT)
+  const contentData = await res.json()
+
+  return {
+    props: {
+      contentData,
+    },
+  }
 }
 
 export default Virkopedia

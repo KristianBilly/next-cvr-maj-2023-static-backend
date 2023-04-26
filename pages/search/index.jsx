@@ -1,8 +1,9 @@
 import { TextInput } from '../../components/other/text-input'
 import { SearchResults } from '../../components/search/search-results'
+import { API_ENDPOINT } from '../../constants/constants'
 import { useSiteContext } from '../../context/site-context'
 
-const SearchWrapper = () => {
+const SearchWrapper = ({ contentData }) => {
   const { searchField, setSearchField } = useSiteContext()
 
   return (
@@ -17,10 +18,21 @@ const SearchWrapper = () => {
           onChange={(e) => setSearchField(e.target.value)}
           autoFocus
         />
-        <SearchResults />
+        <SearchResults contentData={contentData} />
       </div>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(API_ENDPOINT)
+  const contentData = await res.json()
+
+  return {
+    props: {
+      contentData,
+    },
+  }
 }
 
 export default SearchWrapper
