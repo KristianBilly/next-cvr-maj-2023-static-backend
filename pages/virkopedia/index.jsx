@@ -5,7 +5,7 @@ import { VirkopediaTab } from '../../components/virkopedia/virkopedia-tab'
 
 const allArticles = contentData.virkopediaData
 
-export const Virkopedia = () => {
+const Virkopedia = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0)
   const { content, title } = allArticles[activeButtonIndex]
 
@@ -32,3 +32,5 @@ export const Virkopedia = () => {
     </div>
   )
 }
+
+export default Virkopedia

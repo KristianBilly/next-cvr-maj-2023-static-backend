@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 export const SearchCompany = ({ convertedData, index }) => (
   <Link
     className="search-company"
-    to={`/company/${index}`}>
+    href={`/company/${index}`}>
     <article className="search-article">
       {convertedData.map(({ title, paragraphOne, paragraphTwo }, index) => (
         <div

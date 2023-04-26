@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import cc from 'classcat'
+import Link from 'next/link'
 
 export const TextLink = ({ text, path, virkdk }) => (
   <Link
@@ -9,8 +9,7 @@ export const TextLink = ({ text, path, virkdk }) => (
         'text-link-virkdk': virkdk,
       },
     ])}
-    to={path}
-  >
+    href={path}>
     {text}
   </Link>
 )

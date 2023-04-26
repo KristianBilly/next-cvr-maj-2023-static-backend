@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 export const Header = ({ contentData }) => {
   const {
@@ -11,8 +11,8 @@ export const Header = ({ contentData }) => {
       <div className="header-container">
         {titleLinks.map(({ text, link }, index) => (
           <Link
-            className="header-link"
-            to={link}
+            className="header-linLink"
+            href={link}
             key={link + index}>
             {text}
           </Link>
