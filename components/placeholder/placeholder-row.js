@@ -1,4 +1,4 @@
-export const LandingPageRow = ({ row }) => {
+export const PlaceholderRow = ({ row }) => {
   const {
     numberOfColumns,
     titleColumnOne,

@@ -1,4 +1,4 @@
-import { LandingPageRow } from '../components/placeholder/placeholder-row'
+import { PlaceholderRow } from '../components/placeholder/placeholder-row'
 import { contentData } from '../constants/content-data'
 
 const Index = () => {
@@ -6,8 +6,13 @@ const Index = () => {
 
   return (
     <>
-      {LandingPageRows.map((row) => {
-        return <LandingPageRow row={row} />
+      {LandingPageRows.map((row, index) => {
+        return (
+          <PlaceholderRow
+            key={row.textColumnOne + index}
+            row={row}
+          />
+        )
       })}
     </>
   )
