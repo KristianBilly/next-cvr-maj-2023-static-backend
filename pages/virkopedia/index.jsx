@@ -3,18 +3,16 @@ import { VirkopediaArticle } from '../../components/virkopedia/virkopedia-articl
 import { VirkopediaTab } from '../../components/virkopedia/virkopedia-tab'
 import { API_ENDPOINT } from '../../constants/constants'
 
-const Virkopedia = ({ contentData }) => {
-  const allArticles = contentData.virkopediaData
-
+const Virkopedia = ({ articles }) => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0)
-  const { content, title } = allArticles[activeButtonIndex]
+  const { content, title } = articles[activeButtonIndex]
 
   return (
     <div className="virkopedia">
       <h2>Virkopedia</h2>
       <div className="virkopedia-container">
         <div className="btn-container">
-          {allArticles.map(({ title }, index) => (
+          {articles.map(({ title }, index) => (
             <VirkopediaTab
               key={title + index}
               setActiveButtonIndex={setActiveButtonIndex}
@@ -35,11 +33,13 @@ const Virkopedia = ({ contentData }) => {
 
 export const getStaticProps = async () => {
   const res = await fetch(API_ENDPOINT)
-  const contentData = await res.json()
+  const data = await res.json()
+
+  const articles = data.virkopediaData
 
   return {
     props: {
-      contentData,
+      articles,
     },
   }
 }

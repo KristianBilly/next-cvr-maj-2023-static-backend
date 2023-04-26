@@ -1,10 +1,9 @@
 import { useEffect } from 'react'
 import { SearchCompany } from './search-company'
-import { SearchNoResults } from './search-no-results'
 import { useSiteContext } from '../../context/site-context'
 import { getConvertedSearchData, getFilteredCompanies } from '../../utils'
 
-export const SearchResults = ({ contentData }) => {
+export const SearchResults = ({ allCompanies }) => {
   const {
     searchField,
     companies,
@@ -13,19 +12,19 @@ export const SearchResults = ({ contentData }) => {
     isSearchFieldEmpty,
   } = useSiteContext()
 
-  const allCompanies = contentData.companies
-
   useEffect(() => {
     setCompanies(getFilteredCompanies(searchField, allCompanies))
   }, [searchField])
 
-  if (!isCompaniesFound && !isSearchFieldEmpty) return <SearchNoResults />
+  if (!isCompaniesFound && !isSearchFieldEmpty)
+    return <h3 className="message-title">No companies found</h3>
 
   if (isCompaniesFound)
     return (
       <div>
         {companies.map((company, index) => {
           const convertedData = getConvertedSearchData({ ...company })
+
           return (
             <SearchCompany
               key={index}

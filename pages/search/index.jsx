@@ -3,7 +3,7 @@ import { SearchResults } from '../../components/search/search-results'
 import { API_ENDPOINT } from '../../constants/constants'
 import { useSiteContext } from '../../context/site-context'
 
-const SearchWrapper = ({ contentData }) => {
+const SearchWrapper = ({ allCompanies }) => {
   const { searchField, setSearchField } = useSiteContext()
 
   return (
@@ -18,7 +18,7 @@ const SearchWrapper = ({ contentData }) => {
           onChange={(e) => setSearchField(e.target.value)}
           autoFocus
         />
-        <SearchResults contentData={contentData} />
+        <SearchResults allCompanies={allCompanies} />
       </div>
     </div>
   )
@@ -26,11 +26,12 @@ const SearchWrapper = ({ contentData }) => {
 
 export const getStaticProps = async () => {
   const res = await fetch(API_ENDPOINT)
-  const contentData = await res.json()
+  const data = await res.json()
+  const allCompanies = data.companiesData
 
   return {
     props: {
-      contentData,
+      allCompanies,
     },
   }
 }

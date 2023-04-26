@@ -1,12 +1,10 @@
 import { PlaceholderRow } from '../components/placeholder/placeholder-row'
-import { contentData } from '../constants/content-data'
+import { API_ENDPOINT } from '../constants/constants'
 
-const Index = () => {
-  const LandingPageRows = contentData.landingPageData
-
+const Index = ({ landingPageRows }) => {
   return (
     <>
-      {LandingPageRows.map((row, index) => {
+      {landingPageRows.map((row, index) => {
         return (
           <PlaceholderRow
             key={row.textColumnOne + index}
@@ -16,6 +14,18 @@ const Index = () => {
       })}
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(API_ENDPOINT)
+  const data = await res.json()
+  const landingPageRows = data.landingPageData
+
+  return {
+    props: {
+      landingPageRows,
+    },
+  }
 }
 
 export default Index

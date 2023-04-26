@@ -10,15 +10,8 @@
     margin-bottom: 2rem;
   }
 
-  .search-no-results {
-    .user-hint-link {
-      @include link;
-      font-weight: $font-weight-bold;
-    }
-
-    .message-title {
-      margin: 0.75rem 0;
-    }
+  .message-title {
+    margin: 0.75rem 0;
   }
 
   .search-input {
@@ -52,41 +45,6 @@
       }
 
       @include breakpoint-md-down {
-        flex: 0 0 1;
-      }
-    }
-  }
-
-  .stats-heading {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .search-statistics {
-    line-height: 1.5rem;
-    border: $border;
-    width: 100%;
-    padding: 1.5rem;
-    margin: 2rem 0;
-
-    .stats-container {
-      margin-bottom: 1.25rem;
-      display: flex;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      @include breakpoint-sm-down {
-        display: block;
-      }
-    }
-
-    .stats-title {
-      font-weight: $font-weight-bold;
-      flex: 0 0 400px;
-
-      @include breakpoint-sm-down {
         flex: 0 0 1;
       }
     }

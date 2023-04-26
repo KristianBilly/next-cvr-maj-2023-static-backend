@@ -32,7 +32,7 @@ export const contentData = {
     },
   ],
 
-  companies: [
+  companiesData: [
     {
       uid: '0',
       cvrNumber: '12345678',
@@ -55,7 +55,7 @@ export const contentData = {
       companyName: 'Zervant',
       address: 'Keilaranta 17C',
       postNoCity: 'FI-02150 ESPOO',
-      companyType: '	Limited company',
+      companyType: 'Limited company',
     },
     {
       uid: '3',

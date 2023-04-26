@@ -3,8 +3,9 @@ import { CompanyTable } from '../../components/company/company-table'
 import Link from 'next/link'
 import { API_ENDPOINT } from '../../constants/constants'
 
-const Company = ({ selectedCompany, companyName }) => {
+const Company = ({ selectedCompany }) => {
   const formattedCompany = getConvertedCompanyData(selectedCompany)
+  const companyName = selectedCompany?.companyName
 
   if (!formattedCompany) return <h2>No companies found...</h2>
 
@@ -23,23 +24,22 @@ const Company = ({ selectedCompany, companyName }) => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await fetch(API_ENDPOINT)
-  const contentData = await res.json()
-  const selectedCompany = contentData.companies[params.uid]
-  const companyName = contentData.companies[params.uid].companyName
+  const data = await res.json()
+
+  const selectedCompany = data?.companiesData[params.uid]
 
   return {
     props: {
       selectedCompany,
-      companyName,
     },
   }
 }
 
 export async function getStaticPaths() {
   const res = await fetch(API_ENDPOINT)
-  const contentData = await res.json()
+  const data = await res.json()
 
-  const paths = contentData.companies.map(({ uid }) => ({
+  const paths = data.companiesData.map(({ uid }) => ({
     params: { uid },
   }))
 
