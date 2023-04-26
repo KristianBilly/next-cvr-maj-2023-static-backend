@@ -34,6 +34,7 @@ export const contentData = {
 
   companies: [
     {
+      uid: '0',
       cvrNumber: '12345678',
       companyName: 'BiLLY ApS',
       address: 'Vesterbrogade 1C, 6.',
@@ -41,6 +42,7 @@ export const contentData = {
       companyType: 'Limited Liability Company',
     },
     {
+      uid: '1',
       cvrNumber: '12345678',
       companyName: 'Salary.dk ApS',
       address: 'Vesterbrogade 1E, 6.',
@@ -48,6 +50,7 @@ export const contentData = {
       companyType: 'Limited Liability Company',
     },
     {
+      uid: '2',
       cvrNumber: '12345678',
       companyName: 'Zervant',
       address: 'Keilaranta 17C',
@@ -55,6 +58,7 @@ export const contentData = {
       companyType: '	Limited company',
     },
     {
+      uid: '3',
       cvrNumber: '12345678',
       companyName: 'Tellow',
       address: ' Danzigerkade 207',
@@ -62,6 +66,7 @@ export const contentData = {
       companyType: '	Limited company',
     },
     {
+      uid: '4',
       cvrNumber: '12345678',
       companyName: 'Kontist',
       address: 'Kastanienallee 98B',
@@ -69,6 +74,7 @@ export const contentData = {
       companyType: 'GmbH',
     },
     {
+      uid: '5',
       cvrNumber: '12345678',
       companyName: 'Ageras Finance ApS',
       address: 'Ahnqwstråde 6, st.',
