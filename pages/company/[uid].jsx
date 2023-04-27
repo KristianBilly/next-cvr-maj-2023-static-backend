@@ -1,7 +1,7 @@
 import { getConvertedCompanyData } from '../../utils/get-converted-company-data'
 import { CompanyTable } from '../../components/company/company-table'
 import Link from 'next/link'
-import { API_ENDPOINT } from '../../constants/constants'
+import { API_ENDPOINT, SEARCH_PATH } from '../../constants/constants'
 
 const Company = ({ selectedCompany }) => {
   const formattedCompany = getConvertedCompanyData(selectedCompany)
@@ -13,7 +13,7 @@ const Company = ({ selectedCompany }) => {
     <section className="company-page">
       <Link
         className="back-to-search"
-        href="/">
+        href={SEARCH_PATH}>
         Back to search
       </Link>
       <h2> {companyName} </h2>

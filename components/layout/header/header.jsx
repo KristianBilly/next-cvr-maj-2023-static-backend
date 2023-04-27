@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="header-container">
         {headerData.map(({ text, link }, index) => (
           <Link
-            className="header-linLink"
+            className="header-link"
             href={link}
             key={link + index}>
             {text}

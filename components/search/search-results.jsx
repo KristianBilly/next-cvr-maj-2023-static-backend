@@ -13,7 +13,9 @@ export const SearchResults = ({ allCompanies }) => {
   } = useSiteContext()
 
   useEffect(() => {
-    setCompanies(getFilteredCompanies(searchField, allCompanies))
+    isSearchFieldEmpty
+      ? setCompanies(allCompanies)
+      : setCompanies(getFilteredCompanies(searchField, allCompanies))
   }, [searchField])
 
   if (!isCompaniesFound && !isSearchFieldEmpty)
