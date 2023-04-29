@@ -87,28 +87,28 @@ export const contentData = {
     {
       numberOfColumns: 3,
       titleColumnOne: 'Get help to CVR',
-      textColumnOne:
+      contentColumnOne:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       titleColumnTwo: 'Creating company?',
-      textColumnTwo:
+      contentColumnTwo:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       titleColumnThree: 'Other Databases',
-      textColumnThree:
+      contentColumnThree:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     },
     {
       numberOfColumns: 2,
       titleColumnOne: 'Other Help?',
-      textColumnOne:
+      contentColumnOne:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       titleColumnTwo: 'Financial assistance?',
-      textColumnTwo:
+      contentColumnTwo:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     },
     {
       numberOfColumns: 1,
       titleColumnOne: 'Boardmember?',
-      textColumnOne:
+      contentColumnOne:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     },
   ],

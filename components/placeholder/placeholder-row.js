@@ -2,17 +2,17 @@ export const PlaceholderRow = ({ row }) => {
   const {
     numberOfColumns,
     titleColumnOne,
-    textColumnOne,
+    contentColumnOne,
     titleColumnTwo,
-    textColumnTwo,
+    contentColumnTwo,
     titleColumnThree,
-    textColumnThree,
+    contentColumnThree,
   } = row
 
   const allColumns = [
-    titleColumnOne && { title: titleColumnOne, text: textColumnOne },
-    titleColumnTwo && { title: titleColumnTwo, text: textColumnTwo },
-    titleColumnThree && { title: titleColumnThree, text: textColumnThree },
+    titleColumnOne && { title: titleColumnOne, text: contentColumnOne },
+    titleColumnTwo && { title: titleColumnTwo, text: contentColumnTwo },
+    titleColumnThree && { title: titleColumnThree, text: contentColumnThree },
   ]
 
   const shouldRenderColumn = allColumns.lengh !== 0

@@ -7,7 +7,7 @@ const Index = ({ landingPageRows }) => {
       {landingPageRows.map((row, index) => {
         return (
           <PlaceholderRow
-            key={row.textColumnOne + index}
+            key={row.contentColumnOne + index}
             row={row}
           />
         )
