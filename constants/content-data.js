@@ -40,6 +40,7 @@ export const contentData = {
       address: 'Keilaranta 17C',
       postNoCity: 'FI-02150 ESPOO',
       companyType: 'Limited company',
+      status: 'Active',
     },
     {
       uid: '1',
@@ -48,6 +49,7 @@ export const contentData = {
       address: 'Kastanienallee 98B',
       postNoCity: '10435 Berlin',
       companyType: 'GmbH',
+      status: 'Active',
     },
     {
       uid: '2',
@@ -56,6 +58,7 @@ export const contentData = {
       address: 'Vesterbrogade 1C, 6.',
       postNoCity: '1620 København V',
       companyType: 'Limited Liability Company',
+      status: 'Active',
     },
     {
       uid: '3',
@@ -64,6 +67,7 @@ export const contentData = {
       address: ' Danzigerkade 207',
       postNoCity: '1013 AP Amsterdam',
       companyType: '	Limited company',
+      status: 'Active',
     },
     {
       uid: '4',
@@ -72,6 +76,7 @@ export const contentData = {
       address: 'Vesterbrogade 1E, 6.',
       postNoCity: '1620 København V',
       companyType: 'Limited Liability Company',
+      status: 'Active',
     },
 
     {
@@ -81,6 +86,7 @@ export const contentData = {
       address: 'Ahnqwstråde 6, st.',
       postNoCity: '2500 Valby',
       companyType: 'Limited Liability Company',
+      status: 'Active',
     },
   ],
   landingPageData: [
