@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react'
-import { FaBars } from 'react-icons/fa'
 import { LANDING_PAGE_PATH } from '../../../constants/constants'
 import { TextLink } from '../../other/text-link'
 import { NavbarLinks } from './navbar-links'
@@ -29,7 +28,11 @@ export const Navbar = () => {
           <button
             className="nav-toggle"
             onClick={() => toggleLinks()}>
-            <FaBars />
+            <img
+              className="nav-toggle-icon"
+              src="/hamburger-icon.png"
+              alt="Mobile menu icon"
+            />
           </button>
         </div>
         <NavbarLinks
