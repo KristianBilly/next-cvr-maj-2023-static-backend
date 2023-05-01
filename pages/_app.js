@@ -1,6 +1,6 @@
-import { SiteContextProvider } from 'context/site-context'
 import '../styles/main.scss'
 import { Layout } from '../components/layout/layout'
+import { SiteContextProvider } from '../context/site-context'
 
 export default function App({ Component, pageProps, data }) {
   return (
