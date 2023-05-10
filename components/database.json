@@ -1,0 +1,47 @@
+{
+  "headers": [
+    {
+      "textKey": "headers.text.front_page",
+      "link": "headers.link.front"
+    },
+    {
+      "textKey": "headers.text.search_cvr",
+      "link": "headers.link.search"
+    },
+    {
+      "textKey": "headers.text.help_virk",
+      "link": "headers.link.virkopedia"
+    }
+  ],
+  "footer": [
+    {
+      "columnLinks": [
+        "footer.first_column.topics",
+        "footer.first_column.find_self_or",
+        "footer.first_column.authotities",
+        "footer.first_column.find_self"
+      ],
+      "className": "odd-link"
+    },
+    {
+      "columnLinks": [
+        "footer.second_column.contact_cvr",
+        "footer.second_column.cookies",
+        "footer.second_column.find_self",
+        "footer.second_column.personal",
+        "footer.second_column.declaration"
+      ],
+      "className": "first-link"
+    },
+    {
+      "columnLinks": [
+        "footer.third_column.virk",
+        "footer.third_column.new_rules",
+        "footer.third_column.privacy",
+        "footer.third_column.security",
+        "footer.third_column.cvrdk"
+      ],
+      "className": "first-link"
+    }
+  ]
+}

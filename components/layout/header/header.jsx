@@ -1,17 +1,20 @@
 import Link from 'next/link'
-import { headerData } from './header-data'
+import { useTranslate } from '../../../translations/useTranslate'
+import contentData from '../../database.json'
 
 export const Header = () => {
+  const { t } = useTranslate()
+
   return (
     <div className="header">
-      <h1 className="header-title">CVR - Business in Denmark</h1>
+      <h1 className="header-title">{t('title')}</h1>
       <div className="header-container">
-        {headerData.map(({ text, link }, index) => (
+        {contentData.headers.map(({ textKey, link }, index) => (
           <Link
             className="header-link"
-            href={link}
+            href={t(link)}
             key={link + index}>
-            {text}
+            {t(textKey)}
           </Link>
         ))}
       </div>

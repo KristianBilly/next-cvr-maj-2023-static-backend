@@ -1,7 +1,14 @@
 import { useSiteContext } from '../../../context/site-context'
+import { useTranslate } from '../../../translations/useTranslate'
 
 export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
-  const { isDarkTheme, toggleTheme } = useSiteContext()
+  const { isDarkTheme, toggleTheme, toggleLanguage } = useSiteContext()
+  const { t } = useTranslate()
+
+  const themeButton = isDarkTheme
+    ? t('navbar.theme.light')
+    : t('navbar.theme.dark')
+  const languageButton = t('navbar.language')
 
   return (
     <div
@@ -13,7 +20,12 @@ export const NavbarLinks = ({ linksContainerRef, linksRef }) => {
         <button
           className="theme-btn"
           onClick={() => toggleTheme()}>
-          {isDarkTheme ? 'Light Theme' : 'Dark Theme'}
+          {themeButton}
+        </button>
+        <button
+          className="theme-btn"
+          onClick={() => toggleLanguage()}>
+          {languageButton}
         </button>
       </ul>
     </div>

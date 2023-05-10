@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import { DARK_THEME, LIGHT_THEME } from '../constants/constants'
+import { useRouter } from 'next/router'
 
 const SiteContext = createContext()
 
@@ -23,6 +24,16 @@ export const SiteContextProvider = ({ children }) => {
   const toggleTheme = () =>
     setTheme(theme === LIGHT_THEME ? DARK_THEME : LIGHT_THEME)
 
+  // Language
+  const router = useRouter()
+  const { locale } = router
+  const isEnglish = locale === 'en'
+
+  const toggleLanguage = () => {
+    const newLocale = locale === 'en' ? 'da' : 'en'
+    router.push(router.pathname, router.asPath, { locale: newLocale })
+  }
+
   return (
     <SiteContext.Provider
       value={{
@@ -37,6 +48,8 @@ export const SiteContextProvider = ({ children }) => {
         theme,
         isDarkTheme,
         toggleTheme,
+        isEnglish,
+        toggleLanguage,
       }}>
       {children}
     </SiteContext.Provider>
