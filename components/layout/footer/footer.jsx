@@ -5,8 +5,6 @@ import { FooterSection } from './footer-section'
 import { useTranslate } from '../../../translations/useTranslate'
 
 export const Footer = () => {
-  const { t } = useTranslate()
-
   return (
     <div className="footer">
       <div className="footer-center">

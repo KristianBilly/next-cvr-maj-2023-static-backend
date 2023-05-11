@@ -43,5 +43,31 @@
       ],
       "className": "first-link"
     }
+  ],
+  "virkopediaData": [
+    {
+      "title": "virkopedia.title.acquisition",
+      "content": "virkopedia.conten.an_aquisitiont"
+    },
+    {
+      "title": "virkopedia.title.advance",
+      "content": "virkopedia.content.profit"
+    },
+    {
+      "title": "virkopedia.title.annuity",
+      "content": "virkopedia.content.the_term"
+    },
+    {
+      "title": "virkopedia.title.asset",
+      "content": "virkopedia.content.an_asset"
+    },
+    {
+      "title": "virkopedia.title.atp_contribution",
+      "content": "virkopedia.content.atp_contribution"
+    },
+    {
+      "title": "virkopedia.title.beta",
+      "content": "virkopedia.content.beta"
+    }
   ]
 }
