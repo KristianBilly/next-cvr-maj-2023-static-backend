@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import { VirkopediaArticle } from '../../components/virkopedia/virkopedia-article'
 import { VirkopediaTab } from '../../components/virkopedia/virkopedia-tab'
-import { API_ENDPOINT } from '../../constants/constants'
+import contentData from '../../components/database.json'
+import { useTranslate } from '../../translations/useTranslate'
 
-const Virkopedia = ({ articles }) => {
+const articles = contentData.virkopediaData
+
+const Virkopedia = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0)
+  const { t } = useTranslate()
   const { content, title } = articles[activeButtonIndex]
 
   return (
@@ -14,34 +18,21 @@ const Virkopedia = ({ articles }) => {
         <div className="btn-container">
           {articles.map(({ title }, index) => (
             <VirkopediaTab
-              key={title + index}
+              key={t(title) + index}
               setActiveButtonIndex={setActiveButtonIndex}
-              title={title}
+              title={t(title)}
               index={index}
               activeButtonIndex={activeButtonIndex}
             />
           ))}
         </div>
         <VirkopediaArticle
-          title={title}
-          content={content}
+          title={t(title)}
+          content={t(content)}
         />
       </div>
     </div>
   )
-}
-
-export const getStaticProps = async () => {
-  const res = await fetch(API_ENDPOINT)
-  const data = await res.json()
-
-  const articles = data.virkopediaData
-
-  return {
-    props: {
-      articles,
-    },
-  }
 }
 
 export default Virkopedia

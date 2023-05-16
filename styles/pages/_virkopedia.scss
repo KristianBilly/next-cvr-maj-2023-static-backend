@@ -23,6 +23,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex: 0 0 content;
+    min-width: 200px;
 
     @include breakpoint-md-down {
       flex-direction: row;

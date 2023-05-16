@@ -2,7 +2,8 @@ import { LANDING_PAGE_PATH } from '../../../constants/constants'
 import { TextLink } from '../../other/text-link'
 import contentData from '../../database.json'
 import { FooterSection } from './footer-section'
-import { useTranslate } from '../../../translations/useTranslate'
+
+const footerData = contentData.footer
 
 export const Footer = () => {
   return (
@@ -15,7 +16,7 @@ export const Footer = () => {
             virkdk
           />
         </section>
-        {contentData.footer.map(({ columnLinks, className }, index) => (
+        {footerData.map(({ columnLinks, className }, index) => (
           <FooterSection
             key={className + index}
             columnLinks={columnLinks}

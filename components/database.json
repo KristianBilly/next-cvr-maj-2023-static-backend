@@ -47,7 +47,7 @@
   "virkopediaData": [
     {
       "title": "virkopedia.title.acquisition",
-      "content": "virkopedia.conten.an_aquisitiont"
+      "content": "virkopedia.content.aquisition"
     },
     {
       "title": "virkopedia.title.advance",
@@ -68,6 +68,29 @@
     {
       "title": "virkopedia.title.beta",
       "content": "virkopedia.content.beta"
+    }
+  ],
+  "landingPageData": [
+    {
+      "numberOfColumns": "placeholders.number.of.columns.row.one",
+      "titleColumnOne": "placeholders.title.column.one.row.one",
+      "contentColumnOne": "placeholders.content.column.one.row.one",
+      "titleColumnTwo": "placeholders.title.column.two.row.one",
+      "contentColumnTwo": "placeholders.content.column.two.row.one",
+      "titleColumnThree": "placeholders.title.column.three.row.one",
+      "contentColumnThree": "placeholders.content.column.three.row.one"
+    },
+    {
+      "numberOfColumns": "placeholders.number.of.columns.row.two",
+      "titleColumnOne": "placeholders.title.column.one.row.two",
+      "contentColumnOne": "placeholders.content.column.one.row.two",
+      "titleColumnTwo": "placeholders.title.column.two.row.two",
+      "contentColumnTwo": "placeholders.content.column.two.row.two"
+    },
+    {
+      "numberOfColumns": "placeholders.number.of.columns.row.three",
+      "titleColumnOne": "placeholders.title.column.one.row.three",
+      "contentColumnOne": "placeholders.content.column.one.row.three"
     }
   ]
 }
