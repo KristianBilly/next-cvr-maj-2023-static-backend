@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { SearchCompany } from './search-company'
 import { useSiteContext } from '../../context/site-context'
 import { getConvertedSearchData, getFilteredCompanies } from '../../utils'
+import { useTranslate } from '../../translations/useTranslate'
 
 export const SearchResults = ({ allCompanies }) => {
   const {
@@ -11,6 +12,7 @@ export const SearchResults = ({ allCompanies }) => {
     isCompaniesFound,
     isSearchFieldEmpty,
   } = useSiteContext()
+  const { t } = useTranslate()
 
   useEffect(() => {
     isSearchFieldEmpty
@@ -25,7 +27,7 @@ export const SearchResults = ({ allCompanies }) => {
     return (
       <div>
         {companies.map((company, index) => {
-          const convertedData = getConvertedSearchData({ ...company })
+          const convertedData = getConvertedSearchData({ ...company, t })
 
           return (
             <SearchCompany

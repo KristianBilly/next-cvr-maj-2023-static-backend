@@ -2,10 +2,14 @@ import { getConvertedCompanyData } from '../../utils/get-converted-company-data'
 import { CompanyTable } from '../../components/company/company-table'
 import Link from 'next/link'
 import { API_ENDPOINT, SEARCH_PATH } from '../../constants/constants'
+import contentData from '../../components/database.json'
+import { useTranslate } from '../../translations/useTranslate'
 
 const Company = ({ selectedCompany }) => {
+  const { t } = useTranslate()
+
   const formattedCompany = getConvertedCompanyData(selectedCompany)
-  const companyName = selectedCompany?.companyName
+  const companyName = t(selectedCompany?.companyName)
 
   if (!formattedCompany) return <h2>No companies found...</h2>
 
@@ -23,10 +27,9 @@ const Company = ({ selectedCompany }) => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const res = await fetch(API_ENDPOINT)
-  const data = await res.json()
+  const companies = contentData.companiesData
 
-  const selectedCompany = data?.companiesData[params.uid]
+  const selectedCompany = companies[params.uid]
 
   return {
     props: {

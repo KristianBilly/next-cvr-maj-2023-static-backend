@@ -56,33 +56,4 @@ export const contentData = {
       status: 'Active',
     },
   ],
-  landingPageData: [
-    {
-      numberOfColumns: 3,
-      titleColumnOne: 'Get help to CVR',
-      contentColumnOne:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      titleColumnTwo: 'Creating company?',
-      contentColumnTwo:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      titleColumnThree: 'Other Databases',
-      contentColumnThree:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    },
-    {
-      numberOfColumns: 2,
-      titleColumnOne: 'Other Help?',
-      contentColumnOne:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      titleColumnTwo: 'Financial assistance?',
-      contentColumnTwo:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    },
-    {
-      numberOfColumns: 1,
-      titleColumnOne: 'Boardmember?',
-      contentColumnOne:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, veniam deserunt quo sit consequatur laborum ipsa distinctio architecto nam ad fuga ex veritatis sunt repudiandae ab provident, commodi corporis officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    },
-  ],
 }

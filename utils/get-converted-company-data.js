@@ -1,11 +1,17 @@
+import { useTranslate } from '../translations/useTranslate'
+
 export const getConvertedCompanyData = ({
   cvrNumber,
   address,
   postNoCity,
   companyType,
-}) => [
-  { title: 'Cvr-number', field: cvrNumber },
-  { title: 'Address', field: address },
-  { title: 'Postcode and City', field: postNoCity },
-  { title: 'Company Type', field: companyType },
-]
+}) => {
+  const { t } = useTranslate()
+
+  return [
+    { title: t('get.converted.company.cvr'), field: cvrNumber },
+    { title: t('get.converted.company.address'), field: address },
+    { title: t('get.converted.company.postcode.city'), field: postNoCity },
+    { title: t('get.converted.company.companytype'), field: companyType },
+  ]
+}

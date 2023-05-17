@@ -1,12 +1,18 @@
-export const CompanyTable = ({ company }) => (
-  <div className="company-table">
-    {company.map(({ title, field }) => (
-      <div
-        className="content-container"
-        key={field}>
-        <p className="title">{title} </p>
-        <p>{field} </p>
-      </div>
-    ))}
-  </div>
-)
+import { useTranslate } from '../../translations/useTranslate'
+
+export const CompanyTable = ({ company }) => {
+  const { t } = useTranslate()
+
+  return (
+    <div className="company-table">
+      {company.map(({ title, field }) => (
+        <div
+          className="content-container"
+          key={t(field)}>
+          <p className="title">{title} </p>
+          <p>{t(field)} </p>
+        </div>
+      ))}
+    </div>
+  )
+}

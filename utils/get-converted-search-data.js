@@ -5,9 +5,15 @@ export const getConvertedSearchData = ({
   status,
   companyType,
   postNoCity,
-}) => [
-  { title: companyName, paragraphOne: address, paragraphTwo: postNoCity },
-  { title: 'Cvr-number', paragraphOne: cvrNumber },
-  { title: 'Status', paragraphOne: status },
-  { title: 'Company Type', paragraphOne: companyType },
-]
+  t,
+}) => {
+  return [
+    { title: companyName, paragraphOne: address, paragraphTwo: postNoCity },
+    { title: t('get.converted.search.data.cvr'), paragraphOne: cvrNumber },
+    { title: t('get.converted.search.data.status'), paragraphOne: status },
+    {
+      title: t('get.converted.search.data.companytype'),
+      paragraphOne: companyType,
+    },
+  ]
+}
