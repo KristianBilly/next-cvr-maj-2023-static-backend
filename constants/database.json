@@ -95,7 +95,7 @@
   ],
   "companiesData": [
     {
-      "uid": "company.uid.one",
+      "uid": "0",
       "cvrNumber": "company.cvrnumber",
       "companyName": "company.name",
       "address": "company.address",
@@ -104,7 +104,7 @@
       "status": "comapny.status"
     },
     {
-      "uid": "company.uid.two",
+      "uid": "1",
       "cvrNumber": "company.cvrnumber",
       "companyName": "company.name",
       "address": "company.address",
@@ -113,7 +113,7 @@
       "status": "comapny.status"
     },
     {
-      "uid": "company.uid.three",
+      "uid": "2",
       "cvrNumber": "company.cvrnumber",
       "companyName": "company.name",
       "address": "company.address",
@@ -122,7 +122,7 @@
       "status": "comapny.status"
     },
     {
-      "uid": "company.uid.four",
+      "uid": "3",
       "cvrNumber": "company.cvrnumber",
       "companyName": "company.name",
       "address": "company.address",
@@ -131,7 +131,7 @@
       "status": "comapny.status"
     },
     {
-      "uid": "company.uid.five",
+      "uid": "4",
       "cvrNumber": "company.cvrnumber",
       "companyName": "company.name",
       "address": "company.address",

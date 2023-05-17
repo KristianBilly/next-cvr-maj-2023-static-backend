@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { VirkopediaArticle } from '../../components/virkopedia/virkopedia-article'
-import { VirkopediaTab } from '../../components/virkopedia/virkopedia-tab'
-import contentData from '../../components/database.json'
-import { useTranslate } from '../../translations/useTranslate'
+import { VirkopediaArticle } from 'components/virkopedia/virkopedia-article'
+import { VirkopediaTab } from 'components/virkopedia/virkopedia-tab'
+import contentData from 'constants/database.json'
+import { useTranslate } from 'translations/useTranslate'
 
 const articles = contentData.virkopediaData
 

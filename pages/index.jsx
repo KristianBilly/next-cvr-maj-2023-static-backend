@@ -1,5 +1,5 @@
-import { PlaceholderRow } from '../components/placeholder/placeholder-row'
-import contentData from '../components/database.json'
+import { PlaceholderRow } from 'components/placeholder/placeholder-row'
+import contentData from 'constants/database.json'
 
 const landingPageRows = contentData.landingPageData
 

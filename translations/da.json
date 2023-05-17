@@ -50,6 +50,8 @@
   "placeholders.number.of.columns.row.three": "1",
   "placeholders.title.column.one.row.three": "Bestyrrelsesmedlemmer?",
   "placeholders.content.column.one.row.three": "Aktiemarkedet steg i dag, da investorerne omfavnede positive økonomiske indikatorer. Tech-giganter så betydelige gevinster, hvor Apple og Amazon førte an. I mellemtiden steg oliepriserne på grund af geopolitiske spændinger i Mellemøsten. Analytikere forudser en bullish tendens i de kommende uger, drevet af robuste virksomhedsindtægter og statslig stimulans.",
+  "company.no.companies": "Ingen virksomheder fundet",
+  "company.back.to.search": "Tilbage til søgning",
   "company.uid.one": "0",
   "company.cvrnumber": "12345678",
   "company.name": "Kontist",
@@ -67,5 +69,6 @@
   "get.converted.company.companytype": "Virksomhedstype",
   "get.converted.search.data.cvr": "Cvr Nummer",
   "get.converted.search.data.status": "Status",
-  "get.converted.search.data.companytype": "Virksomhedstype"
+  "get.converted.search.data.companytype": "Virksomhedstype",
+  "search.title": "Søg på CVR.dk"
 }

@@ -1,15 +1,19 @@
-import { TextInput } from '../../components/other/text-input'
-import { SearchResults } from '../../components/search/search-results'
-import { API_ENDPOINT } from '../../constants/constants'
-import { useSiteContext } from '../../context/site-context'
+import { TextInput } from 'components/other/text-input'
+import { SearchResults } from 'components/search/search-results'
+import { useSiteContext } from 'context/site-context'
+import contentData from 'constants/database.json'
+import { useTranslate } from '../../translations/useTranslate'
 
-const SearchWrapper = ({ allCompanies }) => {
+const allCompanies = contentData.companiesData
+
+const SearchWrapper = () => {
   const { searchField, setSearchField } = useSiteContext()
+  const { t } = useTranslate()
 
   return (
     <div className="search">
       <div className="search-container">
-        <h2 className="search-title">Search the CVR</h2>
+        <h2 className="search-title">{t('search.title')} </h2>
         <TextInput
           search
           type="search"
@@ -22,18 +26,6 @@ const SearchWrapper = ({ allCompanies }) => {
       </div>
     </div>
   )
-}
-
-export const getStaticProps = async () => {
-  const res = await fetch(API_ENDPOINT)
-  const data = await res.json()
-  const allCompanies = data.companiesData
-
-  return {
-    props: {
-      allCompanies,
-    },
-  }
 }
 
 export default SearchWrapper

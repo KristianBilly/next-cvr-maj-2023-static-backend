@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import { useTranslate } from '../../../translations/useTranslate'
-import contentData from '../../database.json'
+import { useTranslate } from 'translations/useTranslate'
+import contentData from 'constants/database.json'
+
+const headerData = contentData.headers
 
 export const Header = () => {
   const { t } = useTranslate()
@@ -9,7 +11,7 @@ export const Header = () => {
     <div className="header">
       <h1 className="header-title">{t('title')}</h1>
       <div className="header-container">
-        {contentData.headers.map(({ textKey, link }, index) => (
+        {headerData.map(({ textKey, link }, index) => (
           <Link
             className="header-link"
             href={t(link)}

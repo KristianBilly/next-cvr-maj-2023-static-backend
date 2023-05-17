@@ -1,4 +1,4 @@
-import { useTranslate } from '../../translations/useTranslate'
+import { useTranslate } from 'translations/useTranslate'
 
 export const CompanyTable = ({ company }) => {
   const { t } = useTranslate()
@@ -9,7 +9,7 @@ export const CompanyTable = ({ company }) => {
         <div
           className="content-container"
           key={t(field)}>
-          <p className="title">{title} </p>
+          <p className="title">{t(title)} </p>
           <p>{t(field)} </p>
         </div>
       ))}

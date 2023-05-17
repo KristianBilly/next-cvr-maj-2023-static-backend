@@ -50,6 +50,8 @@
   "placeholders.number.of.columns.row.three": "1",
   "placeholders.title.column.one.row.three": "Boardmember?",
   "placeholders.content.column.one.row.three": "The stock market rallied today as investors embraced positive economic indicators. Tech giants saw significant gains, with Apple and Amazon leading the charge. Meanwhile, oil prices surged due to geopolitical tensions in the Middle East. Analysts predict a bullish trend in the coming weeks, fueled by robust corporate earnings and government stimulus.",
+  "company.no.companies": "No companies found",
+  "company.back.to.search": "Back to search",
   "company.uid.one": "0",
   "company.cvrnumber": "12345678",
   "company.name": "Kontist",
@@ -67,5 +69,6 @@
   "get.converted.company.companytype": "Company Type",
   "get.converted.search.data.cvr": "Cvr-Number",
   "get.converted.search.data.status": "Status",
-  "get.converted.search.data.companytype": "Company Type"
+  "get.converted.search.data.companytype": "Company Type",
+  "search.title": "Search the CVR"
 }

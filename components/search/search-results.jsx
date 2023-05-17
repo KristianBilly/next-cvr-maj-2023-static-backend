@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { SearchCompany } from './search-company'
-import { useSiteContext } from '../../context/site-context'
-import { getConvertedSearchData, getFilteredCompanies } from '../../utils'
+import { SearchCompany } from 'components/search/search-company'
+import { useSiteContext } from 'context/site-context'
+import { getConvertedSearchData, getFilteredCompanies } from 'utils'
 import { useTranslate } from '../../translations/useTranslate'
 
 export const SearchResults = ({ allCompanies }) => {
@@ -21,13 +21,13 @@ export const SearchResults = ({ allCompanies }) => {
   }, [searchField])
 
   if (!isCompaniesFound && !isSearchFieldEmpty)
-    return <h3 className="message-title">No companies found</h3>
+    return <h3 className="message-title">{t('company.no.companies')}</h3>
 
   if (isCompaniesFound)
     return (
       <div>
         {companies.map((company, index) => {
-          const convertedData = getConvertedSearchData({ ...company, t })
+          const convertedData = getConvertedSearchData({ ...company })
 
           return (
             <SearchCompany

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
-import da from './da.json'
-import en from './en.json'
+import da from 'translations/da.json'
+import en from 'translations/en.json'
 import { useMemo } from 'react'
 
 const locales = { da, en }

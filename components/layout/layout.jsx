@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Footer } from './footer/footer'
-import { Header } from './header/header'
-import { MainContainer } from './main-container/main-container'
-import { Navbar } from './navbar/navbar'
-import { ThemeWrapper } from './theme-wrapper/theme-wrapper'
+import { Footer } from 'components/layout/footer/footer'
+import { Header } from 'components/layout/header/header'
+import { MainContainer } from 'components/layout/main-container/main-container'
+import { Navbar } from 'components/layout/navbar/navbar'
+import { ThemeWrapper } from 'components/layout/theme-wrapper/theme-wrapper'
 
 export const Layout = ({ children }) => (
   <ThemeWrapper>
