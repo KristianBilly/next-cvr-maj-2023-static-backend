@@ -1,9 +1,9 @@
 import { getConvertedCompanyData } from 'utils'
 import { CompanyTable } from 'components/company/company-table'
 import Link from 'next/link'
-import { SEARCH_PATH } from '../../constants/constants'
+import { SEARCH_PATH } from 'constants/constants'
 import contentData from 'constants/database.json'
-import { useTranslate } from '../../translations/useTranslate'
+import { useTranslate } from 'translations/useTranslate'
 
 const Company = ({ selectedCompany }) => {
   const { t } = useTranslate()

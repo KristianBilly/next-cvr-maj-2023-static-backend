@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useTranslate } from '../../translations/useTranslate'
+import { useTranslate } from 'translations/useTranslate'
 
 export const SearchCompany = ({ convertedData, index }) => {
   const { t } = useTranslate()

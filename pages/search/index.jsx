@@ -2,7 +2,7 @@ import { TextInput } from 'components/other/text-input'
 import { SearchResults } from 'components/search/search-results'
 import { useSiteContext } from 'context/site-context'
 import contentData from 'constants/database.json'
-import { useTranslate } from '../../translations/useTranslate'
+import { useTranslate } from 'translations/useTranslate'
 
 const allCompanies = contentData.companiesData
 

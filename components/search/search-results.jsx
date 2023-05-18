@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { SearchCompany } from 'components/search/search-company'
 import { useSiteContext } from 'context/site-context'
 import { getConvertedSearchData, getFilteredCompanies } from 'utils'
-import { useTranslate } from '../../translations/useTranslate'
+import { useTranslate } from 'translations/useTranslate'
 
 export const SearchResults = ({ allCompanies }) => {
   const {
