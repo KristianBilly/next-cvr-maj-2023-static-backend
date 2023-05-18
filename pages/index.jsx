@@ -5,18 +5,6 @@ import { API_ENDPOINT_TODOS } from '../constants/constants'
 const landingPageRows = contentData.landingPageData
 
 const Index = ({ rowData }) => {
-  // const [row, setRows] = useState([])
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios.get(API_ENDPOINT_TODOS)
-  //     setRows(result.data.data)
-  //   }
-  //   fetchData()
-  // }, [])
-
-  console.log(rowData)
-
   return (
     <>
       {landingPageRows.map((row, index) => {
@@ -27,13 +15,6 @@ const Index = ({ rowData }) => {
           />
         )
       })}
-      {/* <div>
-        {result.map((rep) => {
-          return (
-            <div key={rep.attributes.createdAt}>{rep.attributes.createdAt}</div>
-          )
-        })}
-      </div> */}
     </>
   )
 }
