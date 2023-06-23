@@ -33,13 +33,15 @@ const Company = ({ selectedCompany }: CompanyProps) => {
 
 interface Params {
   params: {
-    uid: number
+    uid: string
   }
 }
 
 export const getStaticProps = async ({ params }: Params) => {
   const companies = contentData.companiesData
-  const selectedCompany = companies[params.uid]
+  const selectedCompany = companies?.find(
+    (company) => company.uid === params.uid
+  )
 
   return {
     props: {

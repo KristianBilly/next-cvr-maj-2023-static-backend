@@ -7,16 +7,16 @@ interface SearchCompanyProps {
     paragraphOne: string
     paragraphTwo: string
   }[]
-  index: number
+  uid: string
 }
 
-export const SearchCompany = ({ convertedData, index }: SearchCompanyProps) => {
+export const SearchCompany = ({ convertedData, uid }: SearchCompanyProps) => {
   const { t } = useTranslate()
 
   return (
     <Link
       className="search-company"
-      href={`/company/${index}`}>
+      href={`/company/${uid}`}>
       <article className="search-article">
         {convertedData.map(({ title, paragraphOne, paragraphTwo }, index) => {
           return (

@@ -28,15 +28,14 @@ export const PlaceholderRow = ({ row }: PlaceholderColumnProps) => {
   } = row
 
   const allColumns = [
-    titleColumnOne && { title: titleColumnOne, text: contentColumnOne },
-    titleColumnTwo && { title: titleColumnTwo, text: contentColumnTwo },
-    titleColumnThree && { title: titleColumnThree, text: contentColumnThree },
+    { title: titleColumnOne, text: contentColumnOne },
+    { title: titleColumnTwo, text: contentColumnTwo },
+    { title: titleColumnThree, text: contentColumnThree },
   ]
 
-  const shouldRenderColumn = allColumns.length !== 0
   const numberOfColumnsAsNumber = Number(t(numberOfColumns))
 
-  return shouldRenderColumn ? (
+  return (
     <div className="placeholder-wrapper">
       {allColumns.slice(0, numberOfColumnsAsNumber).map((column, index) => {
         return (
@@ -49,5 +48,5 @@ export const PlaceholderRow = ({ row }: PlaceholderColumnProps) => {
         )
       })}
     </div>
-  ) : null
+  )
 }

@@ -92,49 +92,49 @@
   ],
   "companiesData": [
     {
-      "uid": "0",
-      "cvrNumber": "company.cvrnumber",
-      "companyName": "company.name",
-      "address": "company.address",
-      "postNoCity": "comapny.postno.city",
-      "companyType": "company.type",
-      "status": "comapny.status"
+      "uid": "company.uid.one",
+      "cvrNumber": "company.cvrnumber.one",
+      "companyName": "company.name.one",
+      "address": "company.address.one",
+      "postNoCity": "company.postno.city.one",
+      "companyType": "company.type.one",
+      "status": "company.status.one"
     },
     {
-      "uid": "1",
-      "cvrNumber": "company.cvrnumber",
-      "companyName": "company.name",
-      "address": "company.address",
-      "postNoCity": "comapny.postno.city",
-      "companyType": "company.type",
-      "status": "comapny.status"
+      "uid": "company.uid.two",
+      "cvrNumber": "company.cvrnumber.two",
+      "companyName": "company.name.two",
+      "address": "company.address.two",
+      "postNoCity": "company.postno.city.two",
+      "companyType": "company.type.two",
+      "status": "company.status.two"
     },
     {
-      "uid": "2",
-      "cvrNumber": "company.cvrnumber",
-      "companyName": "company.name",
-      "address": "company.address",
-      "postNoCity": "comapny.postno.city",
-      "companyType": "company.type",
-      "status": "comapny.status"
+      "uid": "company.uid.three",
+      "cvrNumber": "company.cvrnumber.three",
+      "companyName": "company.name.three",
+      "address": "company.address.three",
+      "postNoCity": "company.postno.city.three",
+      "companyType": "company.type.three",
+      "status": "company.status.three"
     },
     {
-      "uid": "3",
-      "cvrNumber": "company.cvrnumber",
-      "companyName": "company.name",
-      "address": "company.address",
-      "postNoCity": "comapny.postno.city",
-      "companyType": "company.type",
-      "status": "comapny.status"
+      "uid": "company.uid.four",
+      "cvrNumber": "company.cvrnumber.four",
+      "companyName": "company.name.four",
+      "address": "company.address.four",
+      "postNoCity": "company.postno.city.four",
+      "companyType": "company.type.four",
+      "status": "company.status.four"
     },
     {
-      "uid": "4",
-      "cvrNumber": "company.cvrnumber",
-      "companyName": "company.name",
-      "address": "company.address",
-      "postNoCity": "comapny.postno.city",
-      "companyType": "company.type",
-      "status": "comapny.status"
+      "uid": "company.uid.five",
+      "cvrNumber": "company.cvrnumber.five",
+      "companyName": "company.name.five",
+      "address": "company.address.five",
+      "postNoCity": "company.postno.city.five",
+      "companyType": "company.type.five",
+      "status": "company.status.five"
     }
   ]
 }

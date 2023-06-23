@@ -1,5 +1,5 @@
-import { PlaceholderRow } from "components/placeholder/placeholder-row"
-import contentData from "constants/database.json"
+import { PlaceholderRow } from 'components/placeholder/placeholder-row'
+import contentData from 'constants/database.json'
 
 const landingPageRows = contentData.landingPageData
 
@@ -10,6 +10,7 @@ const Index = () => {
         return (
           <PlaceholderRow
             key={row.contentColumnOne + index}
+            //@ts-ignore
             row={row}
           />
         )
