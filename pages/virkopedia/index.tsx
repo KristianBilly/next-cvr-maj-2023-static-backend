@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import { VirkopediaArticle } from 'components/virkopedia/virkopedia-article'
-import { VirkopediaTab } from 'components/virkopedia/virkopedia-tab'
-import contentData from 'constants/database.json'
-import { useTranslate } from 'translations/useTranslate'
-import { API_ENDPOINT_TODOS } from '../../constants/constants'
+import { useState } from "react"
+import { VirkopediaArticle } from "components/virkopedia/virkopedia-article"
+import { VirkopediaTab } from "components/virkopedia/virkopedia-tab"
+import contentData from "constants/database.json"
+import { useTranslate } from "translations/useTranslate"
 
 const articles = contentData.virkopediaData
 
-const Virkopedia = ({ rowData }) => {
+const Virkopedia = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0)
   const { t } = useTranslate()
   const { content, title } = articles[activeButtonIndex]
@@ -34,20 +33,6 @@ const Virkopedia = ({ rowData }) => {
       </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const response = await fetch(API_ENDPOINT_TODOS)
-  const rowData = await response.json()
-  // Axios
-  // const response = await axios.get(API_ENDPOINT_TODOS)
-  // const rowData = response.data  // This is for axios
-
-  return {
-    props: {
-      rowData,
-    },
-  }
 }
 
 export default Virkopedia
