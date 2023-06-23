@@ -2,14 +2,16 @@ import { useRef, useEffect } from 'react'
 import { LANDING_PAGE_PATH } from 'constants/constants'
 import { TextLink } from 'components/other/text-link'
 import { NavbarLinks } from 'components/layout/navbar/navbar-links'
-import { useSiteContext } from 'context/site-context'
+import { SiteContextProps, useSiteContext } from 'context/site-context'
 
 export const Navbar = () => {
-  const { showLinks, toggleLinks } = useSiteContext()
-  const linksContainerRef = useRef(null)
-  const linksRef = useRef(null)
+  const { showLinks, toggleLinks } = useSiteContext() as SiteContextProps
+  const linksContainerRef = useRef<HTMLDivElement>(null)
+  const linksRef = useRef<HTMLUListElement>(null)
 
   useEffect(() => {
+    if (!linksContainerRef.current || !linksRef.current) return
+
     const linksHeight = linksRef.current.getBoundingClientRect().height
     showLinks
       ? (linksContainerRef.current.style.height = `${linksHeight}px`)

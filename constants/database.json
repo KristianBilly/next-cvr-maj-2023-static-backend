@@ -20,8 +20,7 @@
         "footer.first_column.find_self_or",
         "footer.first_column.authotities",
         "footer.first_column.find_self"
-      ],
-      "className": "odd-link"
+      ]
     },
     {
       "columnLinks": [
@@ -30,8 +29,7 @@
         "footer.second_column.find_self",
         "footer.second_column.personal",
         "footer.second_column.declaration"
-      ],
-      "className": "first-link"
+      ]
     },
     {
       "columnLinks": [
@@ -40,8 +38,7 @@
         "footer.third_column.privacy",
         "footer.third_column.security",
         "footer.third_column.cvrdk"
-      ],
-      "className": "first-link"
+      ]
     }
   ],
   "virkopediaData": [

@@ -1,12 +1,8 @@
 import { CompanyData } from 'types/sharedTypes'
 
-interface AllCompaniesProps {
-  allCompanies: CompanyData[]
-}
-
 export const getFilteredCompanies = (
   searchField: string,
-  allCompanies: AllCompaniesProps
+  allCompanies: CompanyData[]
 ) => {
   const filteredCompanies = allCompanies.filter(
     (company) =>

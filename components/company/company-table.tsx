@@ -1,6 +1,15 @@
 import { useTranslate } from 'translations/useTranslate'
 
-export const CompanyTable = ({ company }) => {
+interface CompanyTableProp {
+  title: string
+  field: string
+}
+
+interface CompanyTableProps {
+  company: CompanyTableProp[]
+}
+
+export const CompanyTable = ({ company }: CompanyTableProps) => {
   const { t } = useTranslate()
 
   return (

@@ -1,4 +1,4 @@
-import { useTranslate } from "translations/useTranslate"
+import { useTranslate } from 'translations/useTranslate'
 
 interface PlaceholderRowProps {
   numberOfColumns: string

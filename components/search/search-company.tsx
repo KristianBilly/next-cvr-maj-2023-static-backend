@@ -13,8 +13,6 @@ interface SearchCompanyProps {
 export const SearchCompany = ({ convertedData, index }: SearchCompanyProps) => {
   const { t } = useTranslate()
 
-  console.log(convertedData)
-
   return (
     <Link
       className="search-company"

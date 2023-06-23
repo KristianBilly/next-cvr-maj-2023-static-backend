@@ -16,11 +16,10 @@ export const Footer = () => {
             virkdk
           />
         </section>
-        {footerData.map(({ columnLinks, className }, index) => (
+        {footerData.map(({ columnLinks }, index) => (
           <FooterSection
-            key={className + index}
+            key={index}
             columnLinks={columnLinks}
-            className={className}
           />
         ))}
       </div>
