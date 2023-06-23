@@ -1,4 +1,13 @@
-export const getFilteredCompanies = (searchField, allCompanies) => {
+import { CompanyData } from 'types/sharedTypes'
+
+interface AllCompaniesProps {
+  allCompanies: CompanyData[]
+}
+
+export const getFilteredCompanies = (
+  searchField: string,
+  allCompanies: AllCompaniesProps
+) => {
   const filteredCompanies = allCompanies.filter(
     (company) =>
       company.companyName.toLowerCase().includes(searchField.toLowerCase()) ||

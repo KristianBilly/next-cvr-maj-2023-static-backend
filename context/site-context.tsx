@@ -1,10 +1,31 @@
 import { createContext, useContext, useState } from 'react'
 import { DARK_THEME, LIGHT_THEME } from 'constants/constants'
 import { useRouter } from 'next/router'
+import { CompanyData } from 'types/sharedTypes'
 
-const SiteContext = createContext()
+interface SiteContextProviderProps {
+  children: React.ReactNode
+}
 
-export const SiteContextProvider = ({ children }) => {
+export interface SiteContextProps {
+  companies: CompanyData[]
+  setCompanies: (companies: CompanyData[]) => void
+  searchField: string
+  setSearchField: (searchField: string) => void
+  isCompaniesFound: boolean
+  isSearchFieldEmpty: boolean
+  showLinks: boolean
+  toggleLinks: () => void
+  theme: string
+  isDarkTheme: boolean
+  toggleTheme: () => void
+  isEnglish: boolean
+  toggleLanguage: () => void
+}
+
+const SiteContext = createContext<SiteContextProps | null>(null)
+
+export const SiteContextProvider = ({ children }: SiteContextProviderProps) => {
   //Search
   const [companies, setCompanies] = useState([])
   const [searchField, setSearchField] = useState('')

@@ -17,7 +17,7 @@ export const useTranslate = () => {
     return locales[locale]
   }, [locale])
 
-  const t = (translationKey) => {
+  const t = (translationKey: string) => {
     return (
       languageStrings[translationKey] ||
       `Missing translation for key: ${translationKey} (${locale})`

@@ -1,17 +1,22 @@
-import { useEffect } from "react"
-import { SearchCompany } from "components/search/search-company"
-import { useSiteContext } from "context/site-context"
-import { getConvertedSearchData, getFilteredCompanies } from "utils"
-import { useTranslate } from "translations/useTranslate"
+import { useEffect } from 'react'
+import { SearchCompany } from 'components/search/search-company'
+import { SiteContextProps, useSiteContext } from 'context/site-context'
+import { getConvertedSearchData, getFilteredCompanies } from 'utils'
+import { useTranslate } from 'translations/useTranslate'
+import { CompanyData } from 'types/sharedTypes'
 
-export const SearchResults = ({ allCompanies }) => {
+interface SearchResultsProps {
+  allCompanies: CompanyData[]
+}
+
+export const SearchResults = ({ allCompanies }: SearchResultsProps) => {
   const {
     searchField,
     companies,
     setCompanies,
     isCompaniesFound,
     isSearchFieldEmpty,
-  } = useSiteContext()
+  } = useSiteContext() as SiteContextProps
   const { t } = useTranslate()
 
   useEffect(() => {
@@ -21,7 +26,7 @@ export const SearchResults = ({ allCompanies }) => {
   }, [searchField])
 
   if (!isCompaniesFound && !isSearchFieldEmpty)
-    return <h3 className="message-title">{t("company.no.companies")}</h3>
+    return <h3 className="message-title">{t('company.no.companies')}</h3>
 
   if (isCompaniesFound)
     return (
