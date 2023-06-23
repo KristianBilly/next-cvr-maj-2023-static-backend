@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { SEARCH_PATH } from 'constants/constants'
 import contentData from 'constants/database.json'
 import { useTranslate } from 'translations/useTranslate'
-import { GetStaticPaths, GetStaticProps } from 'next'
 import { CompanyData } from 'types/sharedTypes'
 
 interface CompanyProps {
@@ -32,7 +31,13 @@ const Company = ({ selectedCompany }: CompanyProps) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+interface Params {
+  params: {
+    uid: number
+  }
+}
+
+export const getStaticProps = async ({ params }: Params) => {
   const companies = contentData.companiesData
   const selectedCompany = companies[params.uid]
 
@@ -43,7 +48,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+interface StaticPaths {
+  locales: string[]
+}
+
+export const getStaticPaths = async ({ locales }: StaticPaths) => {
   const companies = contentData.companiesData
 
   const paths = companies

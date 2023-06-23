@@ -10,10 +10,11 @@ export const useTranslate = () => {
   const locale = router.locale || router.defaultLocale
 
   const languageStrings = useMemo(() => {
+    //@ts-ignore
     if (!locales[locale]) {
       return {}
     }
-
+    //@ts-ignore
     return locales[locale]
   }, [locale])
 

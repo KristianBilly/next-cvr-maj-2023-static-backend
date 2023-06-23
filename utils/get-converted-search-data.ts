@@ -17,11 +17,20 @@ export const getConvertedSearchData = ({
 }: getConvertedSearchDataProps) => {
   return [
     { title: companyName, paragraphOne: address, paragraphTwo: postNoCity },
-    { title: 'get.converted.search.data.cvr', paragraphOne: cvrNumber },
-    { title: 'get.converted.search.data.status', paragraphOne: status },
+    {
+      title: 'get.converted.search.data.cvr',
+      paragraphOne: cvrNumber,
+      paragraphTwo: '',
+    },
+    {
+      title: 'get.converted.search.data.status',
+      paragraphOne: status,
+      paragraphTwo: '',
+    },
     {
       title: 'get.converted.search.data.companytype',
       paragraphOne: companyType,
+      paragraphTwo: '',
     },
   ]
 }
